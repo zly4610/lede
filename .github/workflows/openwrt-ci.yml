@@ -9,8 +9,8 @@
 
 name: OpenWrt-CI
 
-on:
-  push:
+on: 
+  push: 
     branches: 
       - master
   # schedule:
@@ -18,9 +18,9 @@ on:
   # release:
   #   types: [published]
 
-jobs:
+jobs: 
 
-  build:
+  build: 
 
     runs-on: ubuntu-latest
 
@@ -156,6 +156,14 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_luci-app-S-S R-plus=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_s-s New Versiong=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_s-sR Server=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_s-sR Socks and Tunnel=y
+          CONFIG_PACKAGE_luci-app-ssr-plus=y
+          CONFIG_PACKAGE_luci-app-ssr-pro=y
+          CONFIG_PACKAGE_luci-app-ssrserver-python=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-verysync=y
@@ -225,13 +233,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-simple-adblock=y
           CONFIG_PACKAGE_luci-app-splash=y
           CONFIG_PACKAGE_luci-app-sqm=y
-          CONFIG_PACKAGE_luci-app-squid=y
-          CONFIG_PACKAGE_luci-app-ssr-plus=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_Include_s-s_New_Versiong=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_Include_s-sR_Server=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_Include_s-sR_Socks_and_Tunnel=y
-          CONFIG_PACKAGE_luci-app-ssr-pro=y
-          CONFIG_PACKAGE_luci-app-ssrserver-python
+          CONFIG_PACKAGE_luci-app-squid=y          
           CONFIG_PACKAGE_luci-app-statistics=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-tinyproxy=y
